@@ -13,12 +13,10 @@
     <a mat-button [routerLink]="'/search'">Search Vehicules</a>
 </div>
 
-
 <div class="info" fxLayout="row">
+
     <div class="popular_drivers" class="inline-block" >
         <mat-card-title class="home_title"> <strong>Popular Drivers</strong> </mat-card-title>
-
- 
         <mat-card *ngFor="let _driver of best_ranked.slice(0,2)">
             <div class="inline-block">
                 <img mat-card-avatar [src]=_driver.photo alt="User Avatar">
@@ -31,14 +29,10 @@
             <!--<a mat-button [routerLink]="'../my-profile-d'" >Go</a>-->
             <a mat-button (click)="goToDriver(_driver.id)" >Go</a>
         </mat-card>
-
-
-
     </div>
 
     <div class="contracts" class="inline-block">
         <mat-card-title class="home_title"> <strong>Lasts Contracts</strong> </mat-card-title>
-
         <mat-card *ngFor="let _contract of contracts_user.slice(0,2)">
             <div class="inline-block">
                 <img mat-card-avatar [src]=_contract.driver.photo alt="User Avatar">
@@ -49,7 +43,7 @@
                 <mat-card-content>To {{_contract.to}}</mat-card-content>
             </div>
         </mat-card>
-
     </div>
 </div>
-<app-footers></app-footers>
+
+

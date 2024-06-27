@@ -57,10 +57,6 @@
 
             </mat-form-field>
 
-
-
-
-
             <div class="Center_Box">
                 <div class="Box">
                     <h1>Payment Details</h1>
@@ -89,7 +85,7 @@
                                 CVV is <strong>required</strong>
                               </mat-error>
                         </mat-form-field>
-                        
+
 
                     </div>
                 </div>
@@ -99,7 +95,7 @@
                         <mat-form-field>
                             <input matInput placeholder="Phone number"
                                 formControlName="phone"  maxlength="9" minlength="9">
-            
+
                             <mat-error *ngIf="phone?.errors?.['required']">
                                 Phone is <strong>required</strong>
                             </mat-error>
@@ -134,38 +130,17 @@
                               Email is <strong>required</strong>
                             </mat-error>
                           </mat-form-field>
-                        
+
                     </div>
-                
+
                 </div>
             </div>
             <button mat-raised-button (click)="registerData()" [disabled]="!AddForm.valid" color="accent">Create</button>
                 <button mat-raised-button [routerLink]="'/setting'" color="warn">Cancel</button>
         </form>
-        
+
     </div>
-    
-    <!-- <form class="cc-form" [formGroup]="form">
-        <mat-form-field class="ngx-cc-form-field">
-          <ngx-cc name="cardNumber" styleClass="card" formControlName="creditCard"></ngx-cc>
-          <mat-placeholder>0000 0000 0000 0000</mat-placeholder>
-          <mat-error *ngIf="form.controls.creditCard.invalid">Card number is not valid</mat-error>
-        </mat-form-field>
-        <div class="cc-date-cvv-container">
-          <mat-form-field class="ngx-cc-form-field">
-              <ngx-cc-date formControlName="creditCardDate"></ngx-cc-date>
-              <mat-placeholder>MM / YY</mat-placeholder>
-              <mat-error *ngIf="form.controls.creditCardDate.invalid">Expiration date is not valid</mat-error>
-          </mat-form-field>
-          <mat-form-field class="ngx-cc-form-field">
-              <ngx-cc-cvv formControlName="creditCardCvv"></ngx-cc-cvv>
-              <mat-placeholder>CVV</mat-placeholder>
-              <mat-error *ngIf="form.controls.creditCardCvv.invalid">Security code is not valid</mat-error>
-          </mat-form-field>
-        </div>
-        <div class="btn-container">
-            <button [disabled]="form.invalid" mat-raised-button color="primary">Purchase</button>
-        </div>
-      </form> -->
+
+
 </div>
 <app-footers></app-footers>

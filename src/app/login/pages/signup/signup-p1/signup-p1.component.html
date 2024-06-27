@@ -113,7 +113,7 @@
         </mat-form-field>
 
         <mat-form-field>
-            <input matInput placeholder="Identify card"
+            <input matInput placeholder="DNI"
                 formControlName="idCard">
             <mat-error *ngIf="idCard?.errors?.['required']">
                 ID is <strong>required</strong>
@@ -137,14 +137,9 @@
         </mat-form-field>
 
         <mat-form-field>
-            <textarea type="text" matInput placeholder="Type a
-                description
-                about you" formControlName="description"></textarea>
+            <textarea type="text" matInput placeholder="Type a description about you" formControlName="description"></textarea>
         </mat-form-field>
 
-        <img src="../../../../../assets/imgs/user-vector.png"
-            alt="user-vector" class="img-user">
-        <p style="text-align: center"><a href="#"><u>Upload a photo</u></a></p>
         <button mat-raised-button [disabled]="!signupForm.valid" color="primary"
             (click)="registerData()">Create account</button>
 

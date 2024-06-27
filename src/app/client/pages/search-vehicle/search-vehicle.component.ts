@@ -35,9 +35,9 @@ export class SearchVehicleComponent implements OnInit {
 
   Type: Vehicle[] = [
     {value: 'vehicle-0', viewValue: 'Bus'},
-    {value: 'vehicle-1', viewValue: 'Van'},
-    {value: 'vehicle-2', viewValue: 'Cargo Truck'},
-    {value: 'vehicle-3', viewValue: 'Truck'},
+    {value: 'vehicle-1', viewValue: 'Minivan'},
+    {value: 'vehicle-2', viewValue: 'Heavy_Load'},
+    {value: 'vehicle-3', viewValue: 'Taxi'},
   ];
 
   constructor(private formBuilder:FormBuilder, private http: HttpClient, private router: Router) { }

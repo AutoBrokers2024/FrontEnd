@@ -1,9 +1,35 @@
-.mat-spacer {
-  flex: 1 1 auto;
+.toolbar {
+  background-color: #2196F3; /* Color azul claro */
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  margin-bottom: 20px; /* Espacio en la parte inferior del toolbar */
 }
 
 .logo {
-  width: 60px;
-  height: 60px;
-  margin: 0px 10px;
+  height: 40px;
+  margin-right: 15px; /* Espacio entre la imagen del logo y el título */
+}
+
+.toolbar h1 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.spacer {
+  flex: 1; /* Empuja los elementos a la derecha */
+}
+
+.toolbar-button {
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+  margin-left: 10px;
+  border-radius: 4px;
+}
+
+.toolbar-button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
 }
