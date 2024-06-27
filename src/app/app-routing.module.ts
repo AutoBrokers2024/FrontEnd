@@ -22,30 +22,31 @@ import { RequestServiceComponent } from './client/request-service/request-servic
 import { SupportComponent } from './components/support/support.component';
 import { PayContractCComponent } from './client/pages/pay-contract-c/pay-contract-c.component';
 import { ProfileComponent } from './components/profile/profile.component';
+import {Error404Component} from "./error404/error404.component";
 
 const routes: Routes = [
-  { path: '', component: LoginComponent },
+
+  { path: '', redirectTo: 'login', pathMatch: 'full'},
   { path: 'login', component: LoginComponent },
-  { path: 'header', component: HeaderComponent },
   { path: 'signup-p1', component: SignupP1Component },
+  { path: 'forgot-password', component: ForgotPasswordComponent },
+  { path: 'home-c', component: HomeCComponent },
+  { path: 'my-profile-c', component: MyProfileCComponent },
+  { path: 'search', component: SearchVehicleComponent },
+  { path: 'contracts-c', component: ContractsCComponent },
+  { path: 'contracts-d', component: ContractsDComponent },
+  { path: 'home-d', component: HomeDComponent },
+  { path: 'my-profile-d', component: MyProfileDComponent },
+  { path: 'support', component: SupportComponent },
   { path: 'signup-p2', component: SignupP2Component },
   { path: 'signup-p3', component: SignupP3Component },
-  { path: 'home-c', component: HomeCComponent },
-  { path: 'search', component: SearchVehicleComponent },
-  { path: 'contracts-d', component: ContractsDComponent },
-  { path: 'contracts-c', component: ContractsCComponent },
-  { path: 'home-d', component: HomeDComponent },
-  { path: 'forgot-password', component: ForgotPasswordComponent },
-  { path: 'my-profile-c', component: MyProfileCComponent },
-  { path: 'my-profile-d', component: MyProfileDComponent },
   { path: 'setting', component: SettingComponent },
   { path: 'Add', component: AddCardComponent },
   { path: 'end-contract', component: EndContractComponent },
   { path: 'request-service', component: RequestServiceComponent },
-  { path: 'support', component: SupportComponent },
   { path: 'app-pay-contract-c', component: PayContractCComponent },
   { path: 'profile/:id', component: ProfileComponent },
-
+  { path: '**', component:Error404Component },
 ];
 
 @NgModule({

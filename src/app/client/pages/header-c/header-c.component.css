@@ -1,95 +1,35 @@
-.mat-spacer{
-    flex: 1 1 auto;
-}
-.logo{
-    width: 60px;
-    height: 60px;
-    margin: 0px 10px;
+.logo {
+  height: 40px;
+  margin-right: 15px; /* Espacio entre la imagen del logo y el título */
 }
 
+.toolbar {
+  background-color: #2196F3; /* Color azul claro */
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  margin-bottom: 30px;
+  justify-content: space-between;
+}
 
-.mat-card {
-    border-radius: 20px;
-    background: #fff;
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08), 0 0 6px rgba(0, 0, 0, 0.05);
-  }
-  
-  .card-group {
-    display: inline-block;
-  }
-  
-  
-  .contract-information {
-    width: 21.5vw;
-  }
-  
-  
-  
-  .client {
-    display: flex;
-  }
-  
-  .profile-img {
-    width: 40px;
-    height: 40px;
-    border-radius: 150px;
-    margin-right: 7px;
-  }
-  
-  .client-history {
-    margin: 10px;
-  }
-  
-  .profile-img-history {
-    width: 100px;
-    height: 100px;
-    border-radius: 150px;
-    margin-right: 7px;
-  }
-  
-  .price {
-    color: #0f15a3;
-    font-weight: bold;
-    font-size: x-large;
-  }
-  
-  .buttons-area {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .buttons-area button {
-    border-radius: 18px;
-    width: 45%;
-  }
-  
-  .card-history {
-    display: flex;
-  }
+.project-name {
+  font-size: 24px;
+  font-weight: bold;
+}
 
-  button{
-    display: flex;
-    align-self: center;
-    justify-items: center;
-    left: 30%;
-    border-radius: 5vh;bottom: 10px;
-    
+.toolbar-buttons {
+  margin-left: auto;
 }
-.accept{
-    width: 100px;
-    height: 100px;
-    display: flex;
+
+.toolbar-button {
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+  margin-left: 10px;
+  border-radius: 4px;
 }
-.card-rejected{
-    background-color:#FBF0F0;
-    overflow: auto;
-}
-.card-title{
-    color: #DE1919;
-}
-mat-card-title{
-    text-align: center;
-}
-mat-card-subtitle{
-    text-align: center;
+
+.toolbar-button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
 }
